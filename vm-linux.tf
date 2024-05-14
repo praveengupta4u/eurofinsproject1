@@ -3,7 +3,7 @@ resource "azurerm_linux_virtual_machine" "linuxvm" {
     resource_group_name = data.azurerm_resource_group.existing_rg.name
     location = data.azurerm_resource_group.existing_rg.name
     size = "Standard_F2"
-    network_interface_ids = [azurerm_network_interface.int1.nic1.id]
+    network_interface_ids = [azurerm_network_interface.int2.id]
     admin_username = "praveen"
     admin_password = "Welcome@3214"
     os_disk {
